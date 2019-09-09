@@ -1,7 +1,57 @@
+body {
+  background-color: rgb(0, 0, 0, 0.7);
+    height: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2014/08/03/01/50/castle-408835_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
 
+#jumbo-div h1 {
+  text-align: center;
+  font-size: 3em;
+}
 
+#jumbo-div {
+  margin-top: 50px;
+  font-family: Ubuntu;
+}
 
+#jumbo-low {
+  font-family: Ubuntu;
+}
 
+#name-input {
+  width: 90%;
+}
 
+#name-input {
+  background-color: darkgray;
+}
 
+#student h3 {
+  text-align: center;
+  font-size: 1em;
+  color: whitesmoke;
+}
 
+#student-name {
+  display: flex;
+  align-self: center;
+}
+
+@media only screen and (min-width: 992px) {
+  #jumbo-div h1 {
+    text-align: center;
+  }
+
+  #student h3 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  #name-input {
+    width: 50% !important;
+  }
+}

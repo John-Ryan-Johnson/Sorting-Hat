@@ -1,76 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./main.css">
-  <title>Sorting Hat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./main.css">
+    <title>Sorting Hat</title>
 </head>
-
 <body>
-  <div class="mx-auto" style="width: 800px;">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to Hoggy Hoggy Warts!</h1>
-      <p class="lead"> Beaters gobbledegook N.E.W.T., Honeydukes eriseD inferi Wormtail. Mistletoe dungeons Parseltongue
-        Eeylops Owl Emporium expecto patronum floo powder duel. Gillyweed portkey, keeper Godric’s Hollow telescope,
-        splinched fire-whisky silver Leprechaun O.W.L. stroke the spine. Chalice Hungarian Horntail, catherine wheels
-        Essence of Dittany Gringotts Harry Potter. Prophecies Yaxley green eyes Remembrall horcrux hand of the servant.
-        Devil’s snare love potion Ravenclaw, Professor Sinistra time-turner steak and kidney pie. Cabbage Daily Prophet
-        letters from no one Dervish and Banges leg.
-      </p>
-      <hr class="my-4">
-      <p>Red hair crookshanks bludger Marauder’s Map Prongs sunshine daisies butter mellow Ludo Bagman.
-      </p>
-      <button type="button" class="btn btn-primary btn-lg">Let's Start Sorting</button>
-    </div>
-    <div class="container border border-dark rounded mt-4 mb-4" id="student-form">
-      <form class="p-3">
-        <h3>Enter First Year's Name</h3>
-        <div class="form-group row justify-content-around align-items-center mt-1 mb-1">
-          <label class="col-2 text-right col-3 student-name">Student:</label>
-          <input type="text" class="form-control col-5 border border-dark" placeholder="Neville Longbottom"
-            id="student-name">
-          <button href='#sort-btn' class="btn btn-primary col-2" type="button" id="sort-btn">Sort!</button>
-        </div>
-      </form>
-    </div>
-    <div class="row">
-      <div class="card-deck">
-        <div class="col-sm-4">
-          <div class="card text-center border border-dark">
-            <div class="card-body">
-              <h3 class="card-title">Winky Abbott</h3>
-              <h5 class="card-text">Hufflepuff</h5>
-              <button type="button" class="btn btn-outline-dark btn-sm">Expel</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card text-center border border-dark">
-            <div class="card-body">
-              <h3 class="card-title">Winky Abbott</h3>
-              <h5 class="card-text">Hufflepuff</h5>
-              <button type="button" class="btn btn-outline-dark btn-sm">Expel</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="card text-center border border-dark">
-            <div class="card-body">
-              <h3 class="card-title">Winky Abbott</h3>
-              <h5 class="card-text">Hufflepuff</h5>
-              <button type="button" class="btn btn-outline-dark btn-sm">Expel</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div id='background'>
 
+        <div class = "d-flex row justify-content-center h-100" id='jumbo-div'>
+            <div class="jumbotron my-auto" id='jumbo' style=''>
+                <h1 class="display-4">Welcome to Hoggywarts Sorting Hat</h1>
+                <p class="lead d-flex justify-content-center">A place for the fearless and magically gifted youth of today!</p>
+                <hr class="my-4">
+                <div id='jumbo-low'>    
+                    <p class='d-flex justify-content-center'>The hat sorts students into four Hoggywarts houses.</p>
+                    <p class='d-flex justify-content-center mt-5'>Click the button below to begin!</p>
+                    <div class='d-flex justify-content-center mt-3'>
+                        <button id='start-button' class="btn btn-primary btn-lg">Let's Start Sorting!</button>
+                    </div>
+                </div>        
+            </div>
+        </div>    
+
+        <div class = "d-flex row justify-content-center h-100" id='student'>
+            <form style='display:none' id='name-input' class='w-90 p-2 bg-dark '>
+                <div class="student-form d-flex flex-column justify-content-center p-2">
+                    <h3>Enter First Year Student's Name</h3>
+                    <input type="text" class="form-control w-50 text-center m-3" id="student-name" placeholder="Student Name">
+                </div>
+                <div class="d-flex row justify-content-center m-2 p-3">
+                    <button type="submit" class="btn btn-primary" id='sort-button'>Sort!</button>
+                </div>
+            </form>
+         </div>   
+  
+            <div id='card-div' class = "d-flex row justify-content-center"></div>
+            
+            <div id='voldemort-div' class = "d-flex row justify-content-center"></div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+        <script src='./main.js'></script>
+    </div>   
 </body>
-
 </html>
