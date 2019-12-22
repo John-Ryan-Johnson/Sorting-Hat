@@ -1,22 +1,22 @@
 const houses = [
   {
       name:'Gryffindor', 
-      image: 'https://orig00.deviantart.net/e6ad/f/2018/225/3/e/hogwarts_gryffindor_final_print_lighten_600_by_baroquegothik-dck0p8c.jpg'
+      image: 'images/gryffindor.png'
   },
 
   {
       name: 'Hufflepuff',
-      image: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7dfdaa71-3c8e-4773-b0e7-d23614a1ab87/dcjjxh4-f5f0953c-26ed-433d-aac3-0e43f93bde22.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdkZmRhYTcxLTNjOGUtNDc3My1iMGU3LWQyMzYxNGExYWI4N1wvZGNqanhoNC1mNWYwOTUzYy0yNmVkLTQzM2QtYWFjMy0wZTQzZjkzYmRlMjIuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RGbPQ5V4c5RCPEr8H5kA-CWB8hrxSBbk1Z_Dv3OKMCc'
+      image: 'images/hufflepuff.png'
   },
 
   {
       name: 'Ravenclaw',
-      image: 'https://orig00.deviantart.net/6631/f/2018/217/b/1/hogwarts_ravenclaw_final_print_lighten_600_by_baroquegothik-dcj9kvh.jpg'
+      image: 'images/ravenclaw.png'
   },
 
   {
       name: 'Slytherin',
-      image: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7dfdaa71-3c8e-4773-b0e7-d23614a1ab87/dciw2xp-c4308118-08be-4c23-8232-afe588dabf07.jpg/v1/fill/w_600,h_849,q_75,strp/__slytherin___by_baroquegothik_dciw2xp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODQ5IiwicGF0aCI6IlwvZlwvN2RmZGFhNzEtM2M4ZS00NzczLWIwZTctZDIzNjE0YTFhYjg3XC9kY2l3MnhwLWM0MzA4MTE4LTA4YmUtNGMyMy04MjMyLWFmZTU4OGRhYmYwNy5qcGciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.499IJ0FUOeQvnOfXBMNtNk6vA3dFM1EtR2w9SHIJH7A'
+      image: 'images/slytherin.png'
   }
 ];
 
